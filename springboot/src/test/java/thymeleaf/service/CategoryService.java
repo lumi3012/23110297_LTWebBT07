@@ -1,0 +1,14 @@
+package thymeleaf.service;
+
+import java.util.List;
+
+import thymeleaf.entity.Category;
+
+public interface CategoryService {
+	List<Category> list();
+    Category create(Category c);
+    Category update(Category c);
+    void delete(Long id);
+    Category findById(Long id);
+	List<Category> search(String q);
+}
